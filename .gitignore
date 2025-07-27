@@ -1,0 +1,25 @@
+# Виртуальное окружение
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Логи
+*.log
+
+# IDE/редакторы
+.idea/
+.vscode/
+
+# Переменные окружения
+.env
+
+# Django static/media
+staticfiles/
+media/
+
+# Исключаем миграции
+**/migrations/
+!**/migrations/__init__.py
