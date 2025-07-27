@@ -59,7 +59,6 @@
 ### Готовые пользователи в БД
 ```JSON
 Admin
-Token e927ed96-a88f-4ca8-b885-f1f602f13001
 {
 	"email": "admin@gmail.com",
 	"first_name": "admin",
@@ -69,7 +68,6 @@ Token e927ed96-a88f-4ca8-b885-f1f602f13001
 }
 
 User
-Token 789aa14a-b97a-4e7f-b93f-0a6ca83d175c
 {
 	"email": "user@gmail.com",
 	"first_name": "user",
@@ -143,7 +141,9 @@ Token 789aa14a-b97a-4e7f-b93f-0a6ca83d175c
 ```bash
 git clone ...
 cd project
+python -m venv venv
 pip install -r requirements.txt
+python manage.py makemigrations
 python manage.py migrate
 python manage.py runserver
 ```
